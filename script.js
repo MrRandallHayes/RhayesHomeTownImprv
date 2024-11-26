@@ -9,7 +9,7 @@ element_image_display.setAttribute("src", carousel[0]);
 document.getElementById('prev-btn').addEventListener('click', (event) => {
   let element_image_display2 = document.getElementById('image-display');
   carousel.unshift(carousel.pop());
-  element_image_display2.setAttribute("src", carousel.slice(-1)[0]);
+  element_image_display2.setAttribute("src", carousel[0]);
 
 });
 
@@ -19,4 +19,3 @@ document.getElementById('next-btn').addEventListener('click', (event) => {
   element_image_display3.setAttribute("src", carousel[0]);
 
 });
-
